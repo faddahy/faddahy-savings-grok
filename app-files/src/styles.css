@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", "Times New Roman", serif;
+  --font-sans: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "ui-monospace", "SF Mono", Menlo, Consolas, monospace;
+
+  --color-paper: #f4efe4;
+  --color-cream: #fffaf2;
+  --color-ink: #1a241c;
+  --color-moss: #5c6b60;
+  --color-sage: #8a968c;
+  --color-forest: #1f6b45;
+  --color-forest-deep: #154a30;
+  --color-leaf: #e7f2ea;
+  --color-line: #d9d0c1;
+  --color-line-strong: #c4b8a4;
+  --color-danger: #9b3a32;
+  --color-danger-soft: #f6e8e6;
+  --color-warn: #8a6a2f;
+  --color-warn-soft: #f4ecd8;
+
+  --color-bg: var(--color-paper);
+  --color-surface: var(--color-cream);
+  --color-fg: var(--color-ink);
+  --color-muted: var(--color-moss);
+  --color-primary: var(--color-forest);
+  --color-primary-fg: var(--color-cream);
+  --color-border: var(--color-line);
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+
+  --shadow-card:
+    0 0 0 1px color-mix(in oklab, var(--color-ink) 6%, transparent),
+    0 1px 2px color-mix(in oklab, var(--color-ink) 5%, transparent),
+    0 8px 24px color-mix(in oklab, var(--color-ink) 4%, transparent);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    font-family: var(--font-display);
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Faddahy Savings",
+      "hasCanvas": false,
+      "bodyTextLen": 1117,
+      "bodyTextHash": "d5ee2989bfae692aeff758572791f2d255b705de50498a45d27869f87b421323",
+      "bodyTextPrefix": "Faddahy Sign in NIGERIA Simple savings that make sense to the po",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Faddahy Savings",
+      "hasCanvas": false,
+      "bodyTextLen": 1117,
+      "bodyTextHash": "d5ee2989bfae692aeff758572791f2d255b705de50498a45d27869f87b421323",
+      "bodyTextPrefix": "Faddahy Sign in NIGERIA Simple savings that make sense to the po",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
